@@ -1,0 +1,57 @@
+\chapter{Antecedentes}
+\label{cha:Antecedentes}
+
+
+\section{Marco de conocimiento}
+
+La base del desarrollo de este proyecto se centra en dos de las asignaturas cursadas a lo largo del Grado en Ingeniería Informática, que son Gestión Avanzada de la Información (GAI) y Desarrollo Industrial del Software (DIS).
+
+En la primera de ellas, se estudian conceptos relacionados con la Web 2.0, la aumentación web. En la segunda de ellas, se estudian conceptos relacionados con el desarrollo dirigido por modelos.
+
+También se ha requerido la necesidad de nociones aprendidas en Interacción Persona Computador, donde se abarcan aspectos relacionados con el desarrollo para usuarios finales y la idea del DIY (\emph{Do-it yourself}).
+
+Una aumentación web, al igual que cualquier aplicación convencional, se divide en dos fases. Por un lado, la fase de edición de la aumentación, que es cuando se está describiendo cómo va a ser esa aumentación. Esta fase equivaldría a todo el desarrollo software, donde se analiza, desarrolla, implementa y verifica una aplicación. Por otro lado, está la fase de despliegue, que es una vez hecha la aplicación, donde se pone en marcha y utiliza.
+
+Es importante diferenciar estas dos fases, dado que en este proyecto se ha trabajado en ambas, y lo que se genera en la fase de desarrollo se refleja posteriormente en la fase de puesta en marcha.
+
+En una aumentación web existen diferentes artefactos. Hay widgets, que son componentes o "partes" del DOM de un sitio web, como imágenes, texto, tablas, etc. Los widgets colocados en un orden concreto ofrecen un sitio web en el que el usuario navega. Estos widgets además disponen de características de interacción, es decir, al interactuar con ellos se producen eventos que hacen cambiar el comportamiento de otros widgets. Por ejemplo, al hacer doble clic sobre un widget, se puede hacer para que se oculte algo. A esto en el proyecto se le llama modelo de orquestación.
+
+Para reflejar estos aspectos, se requiere por un lado en el editor una manera de representarlos de cara al usuario, y por otro lado, una representación interna en forma de datos con la que trabajar con ellos, consiguiendo generar la extensión resultante en base al modelo (desarrollo dirigido por modelos).
+
+\section{Marco instrumental}
+
+Dentro del proyecto, se trabaja fundamentalmente con tres herramientas o tecnologías. Por un lado, tanto el desarrollo del propio editor, como el código generado está desarrollado prácticamente en Javascript. Cabe destacar que Javascript es el lenguaje utilizado para el desarrollo de extensiones de Google Chrome y por tanto la elección de Chrome implicaba disponer de conocimientos de Javascript. De igual manera, el propio WebMakeUp es un instrumento utilizado en el PFG. Este proporciona el framework de representación del modelo de datos (tanto el del usuario final mediante la interfaz del editor, como el modelo interno, con la representación para cargar, guardar o exportar aumentaciones realizadas en WebMakeUp).
+
+\subsection{Javascript}
+
+Javascript es el lenguaje del lado cliente en navegadores web más utilizado. Existen alternativas cómo VisualBasic Script (prácticamente obsoleto en navegadores web), Flash (de Adobe) o Silverlight (de Microsoft).
+
+Javascript es un lenguaje interpretado, es decir, es código fuente que se interpreta en tiempo de ejecución. Esto permite, entre otras cosas, que sea independiente de la plataforma donde se ejecuta (Platform Independent). Aspecto muy útil en la web, dado que existen diferentes navegadores, sistemas operativos,etc. e Internet es un punto de encuentro para todos ellos.
+
+Javascript al ser interpretado, requiere de un motor que lo interprete y ejecute ese código. Actualmente todos los navegadores modernos disponen de uno, pero no todos interpretan el código de la misma manera. De ahí surge la necesidad de crear un estándar como \emph{ECMAScript}. Los navegadores deben aceptar ese estándar. Si el código está escrito cumpliendo con \emph{ECMAScript} se garantiza que funciona en todos los navegadores que cumplan con el estándar.
+
+\subsection{Google Chrome}
+
+Google Chrome es el navegador web que se decidió utilizar en el proyecto WebMakeUp. Google Chrome es un navegador de propósito general desarrollado por Google.
+
+Chrome, entre sus múltiples características, permite la modificación de sitios webs en el lado cliente mediante aplicaciones conocidas como extensiones. Estas extensiones están desarrolladas en Javascript.
+
+En el apartado \ref{sec:PSM-GoogleChrome} se comenta más en profundidad el funcionamiento de Google Chrome.
+
+\subsection{WebMakeUp}
+
+WebMakeUp es un editor desarrollado como extensión de Google Chrome. Este editor se integra dentro del propio navegador y el trabajo con él es dentro del propio navegador.
+
+El objetivo de WebMakeUp es el de funcionar como un editor de mods de sitios web. Hacer \emph{modding} sobre un sitio web se podría asemejar a hacer \emph{tunning} en un automóvil, donde el coche sigue siendo el mismo que el de fábrica, pero donde se le añaden, retiran o sustituyen componentes haciéndolo más agradable al usuario que lo va a utilizar.
+
+Los componentes en WebMakeUp se llaman widgets. Los widgets además de ofrecer contenido, también disponen de interacciones. Estas interacciones permiten al usuario interactuar con los widgets para que cambien el comportamiento del sitio web, por ejemplo, ocultando y mostrando los propios widgets.
+
+El Canvas tiene como funcionalidad mostrar la aumentación de una manera gráfica donde se muestran los widgets y las interacciones entre ellos. Se podría decir que uno de los objetivos primordiales de WebMakeUp es el de realizar una herramienta sencilla, usando como metáfora otra herramienta ya conocida. En este caso, el Canvas se inspira en el lienzo de Photoshop que es donde se refleja de manera gráfica y con un simple vistazo toda la edición de una fotografía. En este caso, WebMakeUp y su interfaz reflejan toda la aumentación en un simple vistazo.
+
+Por tanto, WebMakeUp funciona en tiempo de edición, es decir, presenta un editor para poder describir las aumentaciones.
+
+\section{Marco laboral}
+
+La idea de realizar un editor como WebMakeUp surge del grupo Onekin\footnote{Sitio web del grupo Onekin: http://www.onekin.org/}. El grupo Onekin es un grupo de investigación localizado en la Facultad de Informática de San Sebastián que pertenece a la Universidad del País Vasco/Euskal Herriko Unibertsitatea. Este grupo basa sus estudios en diferentes ámbitos de la ingeniería del software, como es la ingeniería de Portlets, líneas de productos software (\emph{Software Product Line} o SPL), en la ingeniería de aplicaciones web y otras más.
+
+Basándose en el lema de Onekin, \emph{``If you want to go quickly, go alone. If you want to go far, go together.``}, que viene a decir, si quieres ir rápido ve sólo, pero si quieres llegar lejos ve unido; el director de proyecto me propuso participar en el proyecto de WebMakeUp.

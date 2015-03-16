@@ -1,0 +1,1 @@
+This project is a documentation of a project to obtain a Computer Science Grade at Computer Faculty of San Sebastian (UPV/EHU). The documentation is done using LaTeX. All the content are with GNU GPLv2 licence excluding some images that are from third party that have their own licences.
